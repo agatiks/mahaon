@@ -48,22 +48,22 @@ class Matrix:
         else:
             print("No +")
     def summ(self):
-        self.summ=0
+        self.summ1=0
         for i in range(self._size):
             for j in range(self._size):
-                self.summ+=self.matrix[i][j]
+                self.summ1+=self.matrix[i][j]
     def __lt__(self, other):
-        if self.summ>other.summ:
+        if self.summ1<other.summ1:
             return True
         else:
             return False
     def __eq__(self, other):
-        if self.summ==other.summ:
+        if self.summ1==other.summ1:
             return True
         else:
             return False
     def __gt__(self, other):
-        if self.summ<other.summ:
+        if self.summ1>other.summ1:
             return True
         else:
             return False
